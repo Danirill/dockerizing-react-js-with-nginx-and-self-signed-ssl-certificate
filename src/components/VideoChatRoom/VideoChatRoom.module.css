@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.container .bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 19px;
+    flex: 0 1 auto;
+}
+
+.btnExit{
+    border-radius: 15px;
+    border: 1px solid #FF8181 !important;
+    text-decoration: none;
+}
+
+.videoCall{
+    flex: 1 1 auto;
+}

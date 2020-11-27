@@ -1,0 +1,16 @@
+.container{
+    border-radius: 5px;  
+    width: 90px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container span{
+    color: #000;
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.11em;
+}

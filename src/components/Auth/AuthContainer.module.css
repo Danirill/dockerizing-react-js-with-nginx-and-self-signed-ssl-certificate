@@ -1,0 +1,32 @@
+.inner{  
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 80px);
+    width: 100%;
+    flex-flow: column nowrap;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.tabViewInner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;  /*это можно убрать и будет не по центру а сверху*/
+}
+
+.tabView{
+    margin-top: 16px;
+    padding: 0 38px;
+    width: 570px;
+}

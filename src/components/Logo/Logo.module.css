@@ -1,0 +1,26 @@
+.inner{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-flow: row nowrap;
+}
+
+.img{
+    width: 31px;
+    height: 31px;
+    margin-right: 10px;
+}
+
+.text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #3D3C4E
+}
+
+.p-dropdown{
+    border: none !important;
+}

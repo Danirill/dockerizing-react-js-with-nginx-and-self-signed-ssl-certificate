@@ -1,0 +1,121 @@
+.titleAuth{
+    font-family: Gilroy-SemiBold;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: 0.08em;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.titleForms{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    color: #585858;
+}
+
+.passForgot{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    color: black;
+}
+
+
+.saveDataAndBtnInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    letter-spacing: 0.11em;
+    line-height: 16px;
+    color: #000;
+}
+
+.checkbox{
+    margin-right: 16px;
+}
+
+.btnLogin{
+    width: 200px;
+    height: 38px;
+}
+
+.btnSocial{
+    width: 494px;
+    height: 38px;
+    text-align: left;
+    padding: 4px;
+    padding-left: 25%;
+    border-radius: 15px;
+    background: white;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    font-family: Roboto-Regular;
+    display: inline-block;
+    border: none;
+    margin-top: 16px;
+    height: 36px;
+    box-shadow: 0px 0px 3px 1.5px rgba(0, 0, 0, 0.15);
+}
+
+.btnSocialText{
+    color: #000;
+    margin-left: 10px;
+}
+
+
+.btnSocial:hover span{
+    color: #fff;
+    transition-duration: .2s;
+}
+
+.btnSocialImg{
+    width: 28px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.relative{
+    position: relative !important;
+}
+
+.showPassword{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-right: 0em;
+}
+
+.showPassword img{
+    position: absolute;
+    top: -28px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.showPassword:hover img path{
+    fill: #fff;
+}
+
+.errorsForm{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #f44336;
+    border-top: 1px solid #f44336;;
+}

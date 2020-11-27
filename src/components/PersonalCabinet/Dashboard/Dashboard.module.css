@@ -1,0 +1,7 @@
+.inner{
+    flex-grow: 1;
+    padding: 20px 35px 18px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+}

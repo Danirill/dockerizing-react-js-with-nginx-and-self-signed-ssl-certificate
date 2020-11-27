@@ -1,0 +1,139 @@
+.continueInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.continueInner img{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.continueText{
+    font-family: Roboto-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.11em;
+    color: #000000;
+    flex-grow: 3;
+    text-align: center;
+}
+
+.continueImg{
+    flex-grow: 1;
+}
+
+.checkbox{
+    margin-right: 16px;
+}
+
+.orInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.line{
+    width: 232px;
+    height: 1px;
+    background: #E3E3E3;
+    border-radius: 2px;
+}
+
+.textLine{
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.11em;
+}
+
+.titleForms{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.11em;
+    color: #585858;
+}
+
+.orInner span{
+    width: 24px;
+    height: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.11em;
+    color: #000000;
+}
+
+.registrationBtnCheck{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    letter-spacing: 0.11em;
+    line-height: 16px;
+    color: #000;
+}
+
+.btnRegistration{
+    float: right;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.showPassword{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    margin-right: 0em;
+}
+
+.showPassword img{
+    position: absolute;
+    top: -28px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.showPassword:hover img path{
+    fill: #fff;
+}
+
+.errorsForm{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #f44336;
+    border-top: 1px solid #f44336;;
+}
+
+.validate{
+    position: relative;
+}
+.validate::after{
+    content: "\2713";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: -20px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+}

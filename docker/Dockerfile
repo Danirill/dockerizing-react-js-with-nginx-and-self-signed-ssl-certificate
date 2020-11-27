@@ -21,21 +21,26 @@ RUN apk add --no-cache bash
 
 FROM debian:10.4-slim
 
-RUN apt-get update \
-    && apt-get install -y nginx openssl \
-    && openssl req \
-      -x509 \
-      -subj "/C=US/ST=TX/L=Austin/O=Home/CN=samwanekeya.com" \
-      -nodes \
-      -days 365 \
-      -newkey rsa:2048 \
-      -keyout /etc/ssl/private/nginx-selfsigned.key \
-      -out /etc/ssl/certs/nginx-selfsigned.crt
+# RUN apt-get update \
+#     && apt-get install -y nginx openssl \
+#     && openssl req \
+#       -x509 \
+#       -subj "/C=US/ST=TX/L=Austin/O=Home/CN=poly.wellbe.club" \
+#       -nodes \
+#       -days 365 \
+#       -newkey rsa:2048 \
+#       -keyout /etc/ssl/private/nginx-selfsigned.key \
+#       -out /etc/ssl/certs/nginx-selfsigned.crt
 
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /usr/src/app/docker/nginx.conf /etc/nginx/nginx.conf
-COPY --from=builder /usr/src/app/docker/nginxconfig/general.conf /etc/nginx/general.conf
-COPY --from=builder /usr/src/app/docker/nginxconfig/security.conf /etc/nginx/security.conf
+
+# COPY --from=builder /usr/src/app/docker/nginxconfig/general.conf /etc/nginx/general.conf
+# COPY --from=builder /usr/src/app/docker/nginxconfig/security.conf /etc/nginx/security.conf
+
+ADD cert.pem /etc/ssl/certs/cert.pem
+ADD key.pem /etc/ssl/certs/key.pem
+
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 COPY --from=builder /usr/src/app/.env /usr/share/nginx/html/.env
 
