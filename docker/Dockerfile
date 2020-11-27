@@ -38,8 +38,8 @@ COPY --from=builder /usr/src/app/docker/nginx.conf /etc/nginx/nginx.conf
 # COPY --from=builder /usr/src/app/docker/nginxconfig/general.conf /etc/nginx/general.conf
 # COPY --from=builder /usr/src/app/docker/nginxconfig/security.conf /etc/nginx/security.conf
 
-ADD cert.pem /etc/ssl/certs/cert.pem
-ADD key.pem /etc/ssl/certs/key.pem
+COPY --from=builder /usr/src/app/docker/cert.pem /etc/ssl/certs/cert.pem
+COPY --from=builder /usr/src/app/docker/key.pem /etc/ssl/certs/key.pem
 
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 COPY --from=builder /usr/src/app/.env /usr/share/nginx/html/.env
